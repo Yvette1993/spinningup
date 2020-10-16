@@ -1,0 +1,59 @@
+Nodes:
+  -
+    id: 0
+    type: 'input'
+    width: 16
+    height: 16
+    x: 0
+    y: 0
+    adj: [0, 0, 1, 0, 0, 0, 0]
+  -
+    id: 1
+    type: 'input'
+    width: 16
+    height: 16
+    x: 0
+    y: 0
+    adj: [ 0, 0, 1, 0, 0, 0, 0 ]
+  -
+    id: 2
+    type: 'input'
+    width: 10
+    height: 10
+    x: 0
+    y: 0
+    adj: [ 1, 1, 0, 0, 0, 0, 1 ]
+  -
+    id: 3
+    type: 'input'
+    width: 16
+    height: 16
+    x: 0
+    y: 0
+    adj: [ 0, 0, 0, 0, 0, 1, 0 ]
+  -
+    id: 4
+    type: 'input'
+    width: 16
+    height: 16
+    x: 0
+    y: 0
+    adj: [ 0, 0, 0, 0, 0, 1, 0 ]
+  -
+    id: 5
+    type: 'input'
+    width: 10
+    height: 10
+    x: 0
+    y: 0
+    adj: [ 0, 0, 0, 1, 1, 0, 1 ]
+  -
+    id: 6
+    type: 'input'
+    width: 8
+    height: 8
+    x: 0
+    y: 0
+    adj: [ 0, 0, 1, 0, 0, 1, 0 ]
+
+
