@@ -1,0 +1,22 @@
+（1）chip_place_env.py文件实现了布线环境的基类ChipPlaceEnv，一些常量和一些辅助函数
+（2）connect.py文件实现了连线环境类ConnectEnv.
+（3）device.py文件实现了器件环境类DeviceEnv.
+（4）__init__.py文件将各环境注册在Gym中。
+
+基本概念：
+
+* 器件（device）: 取值为{-1, 0, 1，2} 的int型数值。2表示dsp（定义为常量chip_place_env.RED）,-1表输入（chip_place.env.BLACK）,1表输出（chip_place.env.GREEN）
+
+* 棋盘 （board）: 是一个np.array的对象。其中每个元素取自{ 0, 1}的int型数值，0表示对应位置没有器件，1表示对应位置有器件
+
+* 结果 （result）:取值为{0,1}的int型数值。0表器件未完全放置，1表器件放置完毕。
+
+* 位置 （location）：一个形状为（2,）的np.array对象，用中心坐标的方式表示棋盘board上的某个交叉点。
+
+* 有效棋盘（valid）：是一个np.array的对象，其中每个元素取自{0, 1}的int型数值，0表该位置不能放置器件，1表该位置可以放置器件。
+
+状态和动作定义如下：
+
+* 状态（state）：定义为由棋盘和器件组成的tuple对象。表示在棋盘局面与下一个要放置的器件。
+
+* 动作（action）：定义为一个位置。取值不仅位棋盘的中心坐标，也可以是退出（定义为常量env.RESIGN）

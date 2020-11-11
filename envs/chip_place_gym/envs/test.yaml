@@ -17,12 +17,12 @@ Nodes:
     adj: [ 0, 0, 1, 0, 0, 0, 0 ]
   -
     id: 2
-    type: 'input'
+    type: 'dsp'
     width: 10
     height: 10
-    x: 0
-    y: 0
-    adj: [ 1, 1, 0, 0, 0, 0, 1 ]
+    x: None
+    y: None
+    adj: [ 0, 0, 0, 0, 0, 0, 1 ]
   -
     id: 3
     type: 'input'
@@ -41,19 +41,19 @@ Nodes:
     adj: [ 0, 0, 0, 0, 0, 1, 0 ]
   -
     id: 5
-    type: 'input'
+    type: 'dsp'
     width: 10
     height: 10
-    x: 0
-    y: 0
-    adj: [ 0, 0, 0, 1, 1, 0, 1 ]
+    x: None
+    y: None
+    adj: [ 0, 0, 0, 0, 0, 0, 1 ]
   -
     id: 6
-    type: 'input'
+    type: 'output'
     width: 8
     height: 8
     x: 0
     y: 0
-    adj: [ 0, 0, 1, 0, 0, 1, 0 ]
+    adj: [ 0, 0, 0, 0, 0, 0, 0 ]
 
 
